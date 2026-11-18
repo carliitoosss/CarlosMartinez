@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio2</title>
+</head>
+<body>
+<h1>Mostrando listado de los productos</h1>
+<ul>
+    {% for id, pedido in pedidos %}
+        <li><a href="/tienda-online/pedidos/{{ id }}">Ver {{ pedido.nombre }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
